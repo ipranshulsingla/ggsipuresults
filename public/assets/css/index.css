@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap');
+
+
+body{
+    background: #e96443;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #904e95, #e96443);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #904e95, #e96443); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    font-family: 'Domine', serif;
+}
+
+#top-bar{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:2%;
+}
+
+#top-bar ul li{
+   margin-left: 2em;
+    font-size: 1.3em;
+}
+
+#top-bar #menu ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+
+#top-bar #menu a{
+    color: inherit;
+}
+
+#top-bar a:hover{
+    text-decoration: none;
+
+}
+
+#headline{
+    margin-top: 3%;
+    text-align: center;
+}
+
+#form{
+    margin: auto;
+    width: 40%;
+    padding:5% 0;
+    text-align: center;
+    padding-top: 4%;
+    border-radius: 10px;   
+}
+
+#form div{
+    margin: 1%;
+    font-size: 25px;
+    text-align: center;
+}
+
+input[type=text]{
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+    border-bottom: 3px solid white;
+    text-align: center;
+    background-color: transparent;
+    color:white;
+    width: 80%;
+}
+
+button{
+    margin-top: 5%;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+}
+
+::placeholder{
+    color: white;
+}
+
+input:focus,button:focus{
+   outline: none;
+}
+
+.btn-grad {background-image: linear-gradient(to right, #AA076B 0%, #61045F 51%, #AA076B 100%)}
+
+footer{
+    margin-top: 1%;
+    width: 100%;
+}
+
+footer div{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#disclaimer{
+    width: 100%;
+    text-align: left;
+    font-size: 0.8em;
+    border: 1px dotted white;
+    margin-bottom: 1em;
+}
+
+.title{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    width: 100%;
+    border-bottom:1px dotted white ;
+}
+
+#about-contact a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    #top-bar>div>ul{
+        flex-direction: column !important;
+        display: none !important;
+    }
+    
+    #top-bar{
+        justify-content: center;
+    }
+    #headline h2,#headline h6{
+        display: none;
+    }
+
+    #headline::before{
+        content: 'GGSIPU BCA/MCA Results';
+        display: block;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    #headline::after{
+        display: block;
+        content: '2017 Onwards';
+        font-size: 1em;
+        text-align: center;
+    }
+
+    #form{
+        width: 100% !important;
+    }
+
+    #form label{
+        font-size: large;
+    }
+
+    #form input{
+        width: 70%;
+    }
+
+    footer h5, footer h6{
+        font-size: small;
+        text-align: center;
+    }
+
+    #disclaimer{
+        width: 100%;
+        text-align: left;
+        font-size: 0.7em;
+        border: 1px dotted white;
+        margin-bottom: 1em;
+    }
+
+    #disclaimer>ul{
+        box-sizing: border-box;
+        overflow: hidden;
+        padding-right: 0.8em;
+    }
+
+    .title{
+        text-align: center;
+        font-size: 1em;
+        font-weight: 700;
+        width: 100%;
+        border-bottom:1px dotted white ;
+        margin: 0;
+    }
+
+    #about-contact a{
+        text-decoration: none;
+        color: white;
+    }
+}

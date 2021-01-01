@@ -1,0 +1,107 @@
+.w-100{
+    width: 100% !important;
+}
+
+#result{
+    margin-top: 5%;
+}
+
+#basic-details{
+    text-align: center;
+}
+
+#basic-details>.row>.column{
+    background: rgba(0,0,0,0.85);
+    border: 1px dotted white;
+    border-bottom: none;
+    font-size: x-large;
+}
+
+.border-bottom{
+    border-bottom:1px dotted white !important;
+}
+
+#semesters{
+    margin-top: 3%;
+    width: 100%;
+}
+
+.semester>div,.semester>table{
+    width: 100%;
+    background: rgba(0,0,0,0.85);
+}
+
+.semester-tag{
+    display: flex;
+    padding: 0.5em;
+    justify-content: center;
+    align-items: center;
+    border:1px dotted white;
+    position: relative;
+}
+
+.semester-tag a{
+    font-size: 2em !important;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    right: 2%;
+}
+
+.semester-tag h6{
+    font-size: 1.5em !important;
+}
+
+.semester>div>h6{
+    padding: 0.5% 0;
+    margin-bottom: 0;
+}
+
+.semester>div{
+    width: 100%;
+}
+
+th,td,tr{
+    border:1px dotted white;
+    text-align: center;
+    border-collapse: collapse;
+    border-top: none;
+}
+
+
+.semester{
+    margin-bottom: 3%;
+}
+
+
+@media (max-width: 767.98px) { 
+    #basic-details>.row>.column{
+        font-size: 1.2em;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    
+    .semester-tag{
+        font-size: 0.9em !important;
+    }
+    
+    table{
+        width: 100%;
+        font-size: 0.7em;
+    }
+
+    td,th{
+        word-wrap: break-word;
+    }
+
+    #basic-details>.row>.column{
+        padding: 0.5em;
+    }
+
+}
+
+@media (min-width: 768px){
+    .border-right-none{
+        border-right: none !important;
+    }
+}
