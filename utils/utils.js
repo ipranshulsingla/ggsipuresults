@@ -1,4 +1,4 @@
-var database=require('../database');
+var database=require('../database')
 
 const gradePointCalc=(marks)=>{
     let gradePoint=0;
